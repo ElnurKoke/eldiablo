@@ -2,36 +2,55 @@ body {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     margin: 0;
     padding: 0;
-    background: url("point.png");
+    background-color: rgb(43, 43, 43);
+    background: url("12.jpg") no-repeat center center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    background-attachment: fixed;
     color: #ecf4d6; 
-
+    height: 100vh;
 }
+
+@media (max-width:320px ) or (min-width:768px ){
+    body{
+        display: none;
+    }
+}
+
+/* body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -5; 
+} */
 
 header{
     position: fixed;
-    top:1%;
+    top:2%;
     left: 10%;
-    width: 80%;
-    color: #ecf4d6;   
+    width: 80%; 
     display: flex;
     justify-content: space-between;
     z-index: 99;
-    border: solid 1px black;
     font-weight: bold;
+    filter: drop-shadow(1px 5px 5px black);
 }
 
 .nav-1 a {
     text-decoration: none; 
-    color: white; 
-    font-size: 16px;
+    color: white;
+    font-size: 20px;
 }
 
 .nav-2 a {
     text-decoration: none; 
-    color: white; 
-    font-size: 16px; 
+    color: white;
+    font-size: 20px; 
 }
-
 
 section{
     margin: 60px 5% 20px 5%;
@@ -39,46 +58,163 @@ section{
     grid-template-columns: 1fr 2fr;
     grid-template-rows: minmax(100px , auto);
     gap: 10px;
+    font-size: 19px;
 }
 
 .item-1{
-    border-radius: 1em;
-    border: solid 1px black;
+    /* border-radius: 1em;
+    border: solid 1px black; */
+    /* background: rgba(255, 255, 255, 0.2);  */
+    border-radius: 15px;
+    /* backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);  */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #fff;
+    text-align: center;
+    background: url(me3.jpg) no-repeat center center;
+    background-size: cover;
+    /* filter: drop-shadow(0px 0px 5px white); */
+    
 }
 
 .item-2{
-    border-radius: 1em;
+    /* border-radius: 1em;
     border: solid 1px black;
     background-color: #ecf4d6;  
-    color: #9AD0C2;
+    color: #9AD0C2; */
+    /* background: rgba(255, 255, 255, 0.2);  */
+    /* border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    color: #fff;
+    text-align: center;
+    filter: drop-shadow(0px 0px 8px white);
 }
 
 .item-3{
-    border-radius: 1em;
+    /* border-radius: 1em;
     border: solid 1px black;
     background-color: #9AD0C2;
-    color: #2d9596;
+    color: #2d9596; */
+    /* background: rgba(255, 255, 255, 0.2);  */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #fff;
+    text-align: left;
 }
 
 .item-4 {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 1em;
     border: solid 1px black;
     background-color: #2d9596;
-    color:#265073
+    color:#265073 */
+    /* background: rgba(255, 255, 255, 0.2);  */
+    /* border-radius: 15px; */
+    /* backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);  */
+    /* border: 1px solid rgba(255, 255, 255, 0.3);  */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    color: #fff;
+    text-align: left;
+    font-weight: bold;
+    align-self: center;
+    
 }
 
 .item-5 {
-    grid-column-start: 1;
+    /* grid-column-start: 1;
     grid-column-end: 3;
     border-radius: 1em;
     border: solid 1px black;
-    background-color: #265073;
+    background-color: #265073; */
+    /* background: rgba(255, 255, 255, 0.2);  */
+    border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #fff;
+    text-align: center;
+}
+
+.item-6 {
+    border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #fff;
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.item-7 {
+    /* border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    color: #fff;
+    text-align: left;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.item-8 {
+    /* border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    color: #fff;
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.item-9 {
+    border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    color: #fff;
+    text-align: center;
+}
+
+.item-10 {
+    /* border-radius: 15px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    color: #fff;
+    text-align: right;
+    background: url(me2.webp) no-repeat center center;
+    min-height: 400px;
+    background-size: contain;
+    filter: drop-shadow(0px 0px 15px rgb(125, 125, 125));
 }
 
 footer{
     background-color: #2d9596;
+    justify-self: center;
+}
+
+footer button{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    font-weight: bold;
 }
 
 .container{
@@ -91,6 +227,47 @@ footer{
     
 }
 
+.scroll-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 80vw;
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+    border-radius: 15px;
+}
+
+.image-container::-webkit-scrollbar {
+    display: none;  
+}
 
 
+.image-container img {
+    width: auto;
+    height: 100%;
+    max-height: 300px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
 
+
+.scroll-button {
+    background-color: rgb(255, 153, 0);
+    color: white;
+    border: none;
+    height: 100px;
+    border-radius: 0 15px 15px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.scroll-button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
