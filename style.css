@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(43, 43, 43);
-    background: url("12.jpg") no-repeat center center;
+    background: url("eldip.jpg") no-repeat center center;
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
@@ -17,16 +17,16 @@ body {
     }
 }
 
-/* body::before {
+body::before {
     content: '';
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.6); 
     z-index: -5; 
-} */
+}
 
 header{
     position: fixed;
@@ -270,4 +270,39 @@ footer button{
 .scroll-button:disabled {
     background-color: #aaa;
     cursor: not-allowed;
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes zoomInGit {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.animated-zoom {
+    animation: zoomInGit 2s infinite;
+}
+
+.orange {
+    display: inline-block; 
+    text-decoration: none;
+    color: rgb(255, 153, 0);
+    animation: zoomIn 2s infinite;
 }
