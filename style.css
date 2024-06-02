@@ -308,7 +308,12 @@ footer button{
 
 .hiddenL {
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateY(-100px);
+}
+
+.hiddenB {
+    opacity: 0;
+    transform: translateY(100px);
 }
 
 .visible {
