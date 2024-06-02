@@ -21,36 +21,36 @@ document.addEventListener('touchend', handleTouchEnd, false);
 
 //---------------------------------
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    const scrollContainer = document.getElementById('image-container');
-    const scrollLeftButton = document.getElementById('scroll-left');
-    const scrollRightButton = document.getElementById('scroll-right');
+// document.addEventListener('DOMContentLoaded', (event) => {
+//     const scrollContainer = document.getElementById('image-container');
+//     const scrollLeftButton = document.getElementById('scroll-left');
+//     const scrollRightButton = document.getElementById('scroll-right');
 
-    scrollLeftButton.addEventListener('click', () => {
-        scrollContainer.scrollBy({
-            top: 0,
-            left: -300,
-            behavior: 'smooth'
-        });
-    });
+//     scrollLeftButton.addEventListener('click', () => {
+//         scrollContainer.scrollBy({
+//             top: 0,
+//             left: -300,
+//             behavior: 'smooth'
+//         });
+//     });
 
-    scrollRightButton.addEventListener('click', () => {
-        scrollContainer.scrollBy({
-            top: 0,
-            left: 300,
-            behavior: 'smooth'
-        });
-    });
+//     scrollRightButton.addEventListener('click', () => {
+//         scrollContainer.scrollBy({
+//             top: 0,
+//             left: 300,
+//             behavior: 'smooth'
+//         });
+//     });
 
-    updateButtons();
+//     updateButtons();
 
-    scrollContainer.addEventListener('scroll', updateButtons);
+//     scrollContainer.addEventListener('scroll', updateButtons);
 
-    function updateButtons() {
-        scrollLeftButton.disabled = scrollContainer.scrollLeft === 0;
-        scrollRightButton.disabled = scrollContainer.scrollWidth - scrollContainer.scrollLeft === scrollContainer.clientWidth;
-    }
-});
+//     function updateButtons() {
+//         scrollLeftButton.disabled = scrollContainer.scrollLeft === 0;
+//         scrollRightButton.disabled = scrollContainer.scrollWidth - scrollContainer.scrollLeft === scrollContainer.clientWidth;
+//     }
+// });
 
 //---------------------------------
 document.getElementById('contactButton').addEventListener('click', function() {

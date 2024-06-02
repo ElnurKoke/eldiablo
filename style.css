@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(43, 43, 43);
-    background: url("eldip.jpg") no-repeat center center;
+    background: url("mount.jpg") no-repeat center center;
     /* background-repeat: no-repeat; */
     background-size: cover;
     background-attachment: fixed;
@@ -52,6 +52,13 @@ header{
     font-size: 20px; 
 }
 
+.contact a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
 section{
     margin: 60px 5% 20px 5%;
     display:grid;
@@ -72,7 +79,7 @@ section{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     color: #fff;
     text-align: center;
-    background: url(me3.jpg) no-repeat center center;
+    background: url(me/enu11.jpg) no-repeat top center;
     background-size: cover;
     /* filter: drop-shadow(0px 0px 5px white); */
     
@@ -198,7 +205,7 @@ section{
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
     color: #fff;
     text-align: right;
-    background: url(me2.webp) no-repeat center center;
+    background: url(me/me2.webp) no-repeat center center;
     min-height: 400px;
     background-size: contain;
     filter: drop-shadow(0px 0px 15px rgb(125, 125, 125));
@@ -236,7 +243,7 @@ footer button{
     display: flex;
     overflow-x: scroll;
     scroll-behavior: smooth;
-    width: 80vw;
+    width: 100vw;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
     border-radius: 15px;
@@ -252,7 +259,7 @@ footer button{
     height: 100%;
     max-height: 300px;
     margin-right: 10px;
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.3); 
 }
 
@@ -305,4 +312,15 @@ footer button{
     text-decoration: none;
     color: rgb(255, 153, 0);
     animation: zoomIn 2s infinite;
+}
+
+@keyframes slideInTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
