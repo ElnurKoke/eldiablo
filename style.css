@@ -214,23 +214,17 @@ section{
 }
 
 .item-10 {
-    /* border-radius: 15px;
+    border-radius: 15px;
     backdrop-filter: blur(10px); 
     -webkit-backdrop-filter: blur(10px); 
     border: 1px solid rgba(255, 255, 255, 0.3); 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     color: #fff;
-    /* text-align: right;
-    background: url(me/me2.webp) no-repeat center center;
-    min-height: 400px;
-    background-size: contain;
-    filter: drop-shadow(0px 0px 15px rgb(125, 125, 125)); */
-    /* border-right: .15em solid rgb(255, 255, 255);  */
     white-space: wrap; 
     margin: 0 auto; 
     letter-spacing: .15em; 
     opacity: 0;
-    margin: 1em;
+    padding: 4%;
 }
 
 .typing{
