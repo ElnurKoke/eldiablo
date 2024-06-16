@@ -11,6 +11,19 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelectorAll(".content").forEach(content => {
         observer.observe(content);
     });
+
+    const observer2 = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("typing");
+            observer2.unobserve(entry.target);
+        }
+        });
+    });
+    
+    document.querySelectorAll(".item-10").forEach(content => {
+        observer2.observe(content);
+    });
     });
 
 
